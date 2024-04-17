@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <p id="title">Kanban Board</p>
+        <div id="subwrapper">
+            <div class="section-wrapper" id="backlog-box">
+                <p class="section-title" id="backlog">Backlog</p>
+                <div class="section-items" id="items-backlog">
+
+                </div>
+                <button class="add-item-button" onclick="javascript: add_item(backlog)">Add Item</button>
+            </div>
+            <div class="section-wrapper" id="in-progress-box">
+                <p class="section-title" id="in-progress">In Progress</p>
+                <div class="section-items" id="items-in-progress">
+
+                </div>
+                <button class="add-item-button" onclick="javascript: add_item(in_progress)">Add Item</button>
+            </div>
+            <div class="section-wrapper" id="completed-box">
+                <p class="section-title" id="completed">Completed</p>
+                <div class="section-items" id="items-completed">
+
+                </div>
+                <button class="add-item-button" onclick="javascript: add_item(completed)">Add Item</button>
+            </div>
+            <div class="section-wrapper" id="on-hold-box">
+                <p class="section-title" id="on-hold">On Hold</p>
+                <div class="section-items" id="items-on-hold">
+
+                </div>
+                <button class="add-item-button" onclick="javascript: add_item(on_hold)">Add Item</button>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
